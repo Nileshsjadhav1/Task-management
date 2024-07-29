@@ -1,0 +1,34 @@
+
+   <form (ngSubmit)="onSubmit()" class="task-form">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Task Details</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="form-fields">
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Title</mat-label>
+            <input matInput [(ngModel)]="task.title" name="title" required>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Description</mat-label>
+            <textarea matInput [(ngModel)]="task.description" name="description" required></textarea>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Due Date</mat-label>
+            <input matInput [(ngModel)]="task.dueDate" name="dueDate" type="date" required>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Category</mat-label>
+            <input matInput [(ngModel)]="task.category" name="category" required>
+          </mat-form-field>
+          <mat-checkbox [(ngModel)]="task.completed" name="completed">Completed</mat-checkbox>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" type="submit">Save</button>
+        <button mat-raised-button color="warn" (click)="deleteTask()" *ngIf="task.id">Delete</button>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+  

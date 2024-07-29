@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "username": "user1",
+      "password": "password1",
+      "id": 1
+    },
+    {
+      "email": "sam@email.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "email": "jhon@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "email": "amol@email.com",
+      "password": "123456",
+      "id": 4
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Task 1",
+      "description": "Description of Task 1",
+      "completed": true,
+      "category": "Work",
+      "dueDate": "2024-07-30"
+    },
+    {
+      "id": 2,
+      "title": "Task 2",
+      "description": "Description of Task 2",
+      "completed": false,
+      "category": "Home",
+      "dueDate": "2024-07-31"
+    },
+    {
+      "id": 3,
+      "title": "Task 3",
+      "description": "Description of Task 3",
+      "completed": true,
+      "category": "Work",
+      "dueDate": "2024-08-01"
+    },
+    {
+      "id": 4,
+      "title": "Task 4",
+      "description": "Description of Task 4",
+      "completed": false,
+      "category": "Personal",
+      "dueDate": "2024-08-02"
+    },
+    {
+      "id": 5,
+      "title": "Task 5",
+      "description": "Description of Task 5",
+      "completed": true,
+      "category": "Logic",
+      "dueDate": "2024-08-03"
+    },
+    {
+      "id": 6,
+      "title": "Task 6",
+      "description": "Description of Task 6",
+      "completed": false,
+      "category": "Development",
+      "dueDate": "2024-08-04"
+    },
+    {
+      "id": 7,
+      "title": "Task 7",
+      "description": "Description of Task 7",
+      "completed": true,
+      "category": "Testing",
+      "dueDate": "2024-08-05"
+    },
+    {
+      "id": 8,
+      "title": "Task 8",
+      "description": "Description of Task 8",
+      "completed": false,
+      "category": "Design",
+      "dueDate": "2024-08-06"
+    },
+    {
+      "id": 9,
+      "title": "Task 9",
+      "description": "Description of Task 9",
+      "completed": true,
+      "category": "Review",
+      "dueDate": "2024-08-07"
+    },
+    {
+      "id": 10,
+      "title": "Task 10",
+      "description": "Description of Task 10",
+      "completed": false,
+      "category": "Work",
+      "dueDate": "2024-08-08"
+    },
+    {
+      "id": 11,
+      "title": "Task 11",
+      "description": "Description of Task 11",
+      "completed": true,
+      "category": "Home",
+      "dueDate": "2024-08-09"
+    },
+    {
+      "id": 12,
+      "title": "Task 12",
+      "description": "Description of Task 12",
+      "completed": false,
+      "category": "Work",
+      "dueDate": "2024-08-10"
+    },
+    {
+      "id": 13,
+      "title": "Task 13",
+      "description": "Description of Task 13",
+      "completed": true,
+      "category": "Personal",
+      "dueDate": "2024-08-11"
+    }
+  ]
+}

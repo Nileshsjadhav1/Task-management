@@ -1,0 +1,39 @@
+
+ <div class="container">
+    <div class="header">
+      <button mat-raised-button color="primary" (click)="addTask()">Add Task</button>
+      <button mat-raised-button color="danger" (click)="logout()">Logout</button>
+    </div>
+    
+    <div class="filters">
+      <mat-form-field appearance="fill" class="filter-field">
+        <mat-label>Filter by Category</mat-label>
+        <input matInput [(ngModel)]="filterCategory">
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="filter-field">
+        <mat-label>Filter by Status</mat-label>
+        <mat-select [(ngModel)]="filterStatus">
+          <mat-option value="">All</mat-option>
+          <mat-option value="completed">Completed</mat-option>
+          <mat-option value="notCompleted">Not Completed</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="filter-field">
+        <mat-label>Filter by Due Date</mat-label>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="filterDueDate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div class="task-list">
+      <mat-list>
+        <mat-list-item *ngFor="let task of filteredTasks()">
+          <div mat-line class="task-title">{{ task.title }}</div>
+          <div mat-line class="task-description">{{ task.description }}</div>
+          <div mat-line class="task-category">Category: {{ task.category }}</div>
+          <button mat-button color="accent" (click)="viewTask(task.id)">View</button>
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </div>
+  
